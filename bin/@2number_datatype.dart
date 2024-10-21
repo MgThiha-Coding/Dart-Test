@@ -11,15 +11,7 @@ void main() {
   print(num2.isNegative);
 
   // Type Test
-  if (num1 is int) {
-    print('$num1 is Integer');
-  } else {
-    print('false');
-  }
+  print('$num1 is Integer');
 
-  if (num1 is! int) {
-    print('$num1 is not Intefer');
-  } else {
-    print('true');
-  }
+  print('true');
 }

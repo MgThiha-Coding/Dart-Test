@@ -8,11 +8,7 @@ void main() {
     print('false');
   }
 
-  if (num1 is int) {
-    print('Num1 is int Datatypes');
-  } else {
-    print('false');
-  }
+  print('Num1 is int Datatypes');
 
   List<int> numbers = [
     1,

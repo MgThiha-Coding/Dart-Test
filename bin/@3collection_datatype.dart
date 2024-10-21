@@ -24,17 +24,17 @@ void main() {
   print(filtered); // Output filtered list (will contain [1, 1])
 
   // Retrieving data using forEach
-  mergeList.forEach((element) {
+  for (var element in mergeList) {
     print(element);
-  });
+  }
 
   /* Set DataType (unordered) */
   Set setOne = {'Jonathan', 'Rachel', 'James', 1, 3.5, true};
 
   // Retrieving data from the set using forEach
-  setOne.forEach((element) {
+  for (var element in setOne) {
     print(element);
-  });
+  }
 
   /* Retrieving data from the set using contains */
   if (setOne.contains('Jonathan')) {
