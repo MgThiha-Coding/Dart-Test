@@ -10,9 +10,6 @@ void main() {
     if (i == 2) {
       continue; // jump the 2
     }
-    if (i == 8) {
-      continue;
-    }
     print(i);
   }
 }

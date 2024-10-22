@@ -30,9 +30,9 @@ void main() {
   List numList = [1, 2, 3, 4, 5];
   Map<String, int> pairs = {'one': 1, 'two': 2, 'three': 3};
 
-  numList.forEach((e) {
+  for (var e in numList) {
     print(e);
-  });
+  }
 
   pairs.forEach((key, value) {
     print(key);
