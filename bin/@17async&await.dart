@@ -26,8 +26,20 @@ void main() {
   } catch (e) {
     print('Error from getInt: ${e.toString()}');
   }
+
   
   */
+  // complete and timeout
+  getId()
+      .then((value) => print(value))
+      .catchError((e) => print(e.toString()))
+      .whenComplete(
+        () => print('Completed'),
+      )
+      .timeout(
+        Duration(seconds: 3),
+        onTimeout: () => print('Timeout in 3 seconds'),
+      );
   // Schedule a microtask to
   scheduleMicrotask(() {
     print('Microtask: I have a heavy duty');
@@ -49,4 +61,8 @@ Future<String> getString() {
 
 Future<int> getInt() {
   return Future.delayed(Duration(seconds: 4), () => 10);
+}
+
+Future<int> getId() {
+  return Future.delayed(Duration(seconds: 8), () => 1);
 }
