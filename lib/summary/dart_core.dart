@@ -1,5 +1,6 @@
 import 'dart:async';
 
+// main entry
 void main() {
   individualDataTypes();
   collectionDataTypes();
