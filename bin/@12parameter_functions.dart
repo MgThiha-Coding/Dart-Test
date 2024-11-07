@@ -11,19 +11,19 @@ void main() {
 
 // Positional parameters: All are required.
 void showInfo(String name, int age, String address, String education) {
-  print('$name');
+  print(name);
   print('$age');
-  print('$address');
-  print('$education');
+  print(address);
+  print(education);
 }
 
 // Optional positional parameters: 'address' is optional, 'education' has a default value.
 void showBio(String name, int age,
     [String? address, String education = 'NoInfo']) {
-  print('$name');
+  print(name);
   print('$age');
   print('$address');
-  print('$education');
+  print(education);
 }
 
 // Named parameters: 'name' is required, 'age' is optional, 'address' is optional, 'education' has a default value.
@@ -32,8 +32,8 @@ void showDetails(
     int? age,
     String? address,
     String education = 'NoInfo'}) {
-  print('$name');
+  print(name);
   print('$age');
   print('$address');
-  print('$education');
+  print(education);
 }

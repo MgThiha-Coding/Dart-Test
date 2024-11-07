@@ -2,7 +2,7 @@ void main() {
   try {
     checkNumber(14);
   } on GreaterThan10Error catch (e) {
-    print('${e.error}');
+    print(e.error);
   } catch (e) {
     print('Error type is ${e.toString()}');
   }

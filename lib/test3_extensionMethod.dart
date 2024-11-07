@@ -20,6 +20,6 @@ void main() {
 
 extension ext on Object {
   void TypeInfo() {
-    print(this.runtimeType.toString());
+    print(runtimeType.toString());
   }
 }

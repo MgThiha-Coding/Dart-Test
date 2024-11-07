@@ -51,7 +51,7 @@ int order(String chicken, [String? cola, String? patato]) {
     total += potatoPrice;
   }
   if (cola != null && patato != null) {
-    int discountPrice = (total * 30 / 100).toInt();
+    int discountPrice = total * 30 ~/ 100;
     total -= discountPrice;
   }
 
